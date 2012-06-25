@@ -9,4 +9,6 @@ settings = {
 	"service_version":"2007-03-12",,
 	"service_url":"http://mechanicalturk.sandbox.amazonaws.com",
 	"external_submit":"http://workersandbox.mturk.com/mturk/externalSubmit"
+	
+	"monotrans_url":"http://yourappnamehere.appspot.com",
 }
