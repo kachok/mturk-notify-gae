@@ -88,8 +88,8 @@ class MTurkAssignmentHandler(webapp.RequestHandler):
 			#print "already approved"
 
 			#TODO: remove next two lines - this is just for DEBUG
-			task=Task(url='/monotranssubmit', params={"payload":result})
-			queue.add(task)
+			#task=Task(url='/monotranssubmit', params={"payload":result})
+			#queue.add(task)
 
 			pass
 

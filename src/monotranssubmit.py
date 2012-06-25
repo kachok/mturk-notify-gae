@@ -43,9 +43,10 @@ class MonotransSubmitHandler(webapp.RequestHandler):
 
 		res2=data["page_"+str(i)]["smth"]
 
-		logging.debug('res2 = ' + str(res2))
 	
 		res2=res2.encode('utf-8')
+		logging.debug('res2 = ' + str(res2))
+
 		#res2 = urllib.quote_plus(res2)
 	
 		endpoint=data["page_"+str(i)]["method"]
@@ -77,7 +78,7 @@ class MonotransSubmitHandler(webapp.RequestHandler):
 		result = urlfetch.fetch(url=url,
 		                        payload=res2,
 		                        method=urlfetch.POST,
-		                        headers=headers)
+		                        headers=headers, deadline=59)
 
 
 application = webapp.WSGIApplication([
