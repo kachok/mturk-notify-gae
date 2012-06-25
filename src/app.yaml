@@ -1,0 +1,18 @@
+application: mturk-notify-gae
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: no
+
+handlers:
+- url: /mturkassignments
+  script: mturkassignments.py
+
+- url: /monotranssubmit
+  script: monotranssubmit.py
+
+- url: /handler
+  script: handler.py
+
+- url: /.*
+  script: main.py

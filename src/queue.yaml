@@ -1,0 +1,8 @@
+queue:
+# queue for fetching mturk data
+- name: mturkassignments
+  rate: 1/s
+  
+# queue for submitting data into monotrans
+- name: monotranssubmit
+  rate: 5/s
